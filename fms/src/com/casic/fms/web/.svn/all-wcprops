@@ -1,0 +1,161 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/repos/casic/!svn/ver/901/fmsV2/src/com/casic/fms/web
+END
+ReportController.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/casic/!svn/ver/776/fmsV2/src/com/casic/fms/web/ReportController.java
+END
+IndexController.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/casic/!svn/ver/893/fmsV2/src/com/casic/fms/web/IndexController.java
+END
+OrginfoController.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/casic/!svn/ver/491/fmsV2/src/com/casic/fms/web/OrginfoController.java
+END
+SystemConfigController.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/casic/!svn/ver/832/fmsV2/src/com/casic/fms/web/SystemConfigController.java
+END
+InitController.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/casic/!svn/ver/59/fmsV2/src/com/casic/fms/web/InitController.java
+END
+PermissionController.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/casic/!svn/ver/502/fmsV2/src/com/casic/fms/web/PermissionController.java
+END
+GroupListEditor.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/casic/!svn/ver/59/fmsV2/src/com/casic/fms/web/GroupListEditor.java
+END
+VerifyCodeRegController.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/casic/!svn/ver/59/fmsV2/src/com/casic/fms/web/VerifyCodeRegController.java
+END
+ProcessListController.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/casic/!svn/ver/780/fmsV2/src/com/casic/fms/web/ProcessListController.java
+END
+UserController.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/casic/!svn/ver/894/fmsV2/src/com/casic/fms/web/UserController.java
+END
+LoginController.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/casic/!svn/ver/59/fmsV2/src/com/casic/fms/web/LoginController.java
+END
+PasswordLogController.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/casic/!svn/ver/813/fmsV2/src/com/casic/fms/web/PasswordLogController.java
+END
+FileLogController.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/casic/!svn/ver/624/fmsV2/src/com/casic/fms/web/FileLogController.java
+END
+FileSecurityLevelController.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/casic/!svn/ver/775/fmsV2/src/com/casic/fms/web/FileSecurityLevelController.java
+END
+MessageController.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/casic/!svn/ver/491/fmsV2/src/com/casic/fms/web/MessageController.java
+END
+VerifyCodeController.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/casic/!svn/ver/59/fmsV2/src/com/casic/fms/web/VerifyCodeController.java
+END
+VersionInfoController.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/casic/!svn/ver/491/fmsV2/src/com/casic/fms/web/VersionInfoController.java
+END
+BaseWebController.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/casic/!svn/ver/813/fmsV2/src/com/casic/fms/web/BaseWebController.java
+END
+FileClassifyController.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/casic/!svn/ver/901/fmsV2/src/com/casic/fms/web/FileClassifyController.java
+END
+GroupController.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/casic/!svn/ver/59/fmsV2/src/com/casic/fms/web/GroupController.java
+END
+FaceUploadController.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/casic/!svn/ver/59/fmsV2/src/com/casic/fms/web/FaceUploadController.java
+END
+BaseDataController.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/casic/!svn/ver/365/fmsV2/src/com/casic/fms/web/BaseDataController.java
+END
+PasswordController.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/casic/!svn/ver/59/fmsV2/src/com/casic/fms/web/PasswordController.java
+END
+MyLogController.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/casic/!svn/ver/675/fmsV2/src/com/casic/fms/web/MyLogController.java
+END
+FileTypeController.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/casic/!svn/ver/491/fmsV2/src/com/casic/fms/web/FileTypeController.java
+END
+RoleController.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/casic/!svn/ver/491/fmsV2/src/com/casic/fms/web/RoleController.java
+END

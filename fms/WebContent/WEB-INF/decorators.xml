@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<decorators defaultdir="/WEB-INF/layouts/">
+	<excludes>
+		<pattern>/static/*</pattern>
+	</excludes>
+	<decorator name="default" page="default.jsp">
+		<pattern>/*</pattern>
+	</decorator>
+	<decorator name="login" page="login.jsp">
+		<pattern>/login</pattern>
+	</decorator>
+	<decorator name="init" page="login.jsp">
+		<pattern>/init/*</pattern>
+	</decorator>
+	<!--不使用整体页面内容进行展示，使用Ajax进行局部页面更新时使用widget装饰模式，但是需要在页面使用meta标签来进行标注 -->
+	<decorator name="widget" page="widget.jsp">
+	</decorator>
+	<decorator name="single" page="single.jsp">
+	</decorator>
+	<decorator name="error" page="error.jsp">
+	</decorator>
+
+</decorators>

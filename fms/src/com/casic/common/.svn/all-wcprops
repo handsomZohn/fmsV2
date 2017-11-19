@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/repos/casic/!svn/ver/809/fmsV2/src/com/casic/common
+END
+MD5Util.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/casic/!svn/ver/775/fmsV2/src/com/casic/common/MD5Util.java
+END
+SimpleUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/casic/!svn/ver/809/fmsV2/src/com/casic/common/SimpleUtils.java
+END
+BlobImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/casic/!svn/ver/59/fmsV2/src/com/casic/common/BlobImpl.java
+END
+CustomSettionContext.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/casic/!svn/ver/59/fmsV2/src/com/casic/common/CustomSettionContext.java
+END
+IOUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repos/casic/!svn/ver/59/fmsV2/src/com/casic/common/IOUtil.java
+END
+VerifyCodeUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/casic/!svn/ver/59/fmsV2/src/com/casic/common/VerifyCodeUtil.java
+END

@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/repos/casic/!svn/ver/587/fmsV2/script
+END
+upgrade.sql
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/repos/casic/!svn/ver/587/fmsV2/script/upgrade.sql
+END

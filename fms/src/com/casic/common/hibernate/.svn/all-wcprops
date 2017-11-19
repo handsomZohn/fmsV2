@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repos/casic/!svn/ver/59/fmsV2/src/com/casic/common/hibernate
+END
+ConvertTableNamePersister.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/casic/!svn/ver/59/fmsV2/src/com/casic/common/hibernate/ConvertTableNamePersister.java
+END
+TableNameIntercept.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/casic/!svn/ver/59/fmsV2/src/com/casic/common/hibernate/TableNameIntercept.java
+END
+CollectionTableNamePersister.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/casic/!svn/ver/59/fmsV2/src/com/casic/common/hibernate/CollectionTableNamePersister.java
+END
+LocalNamingStrategy.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/casic/!svn/ver/59/fmsV2/src/com/casic/common/hibernate/LocalNamingStrategy.java
+END

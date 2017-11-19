@@ -1,0 +1,66 @@
+package com.casic.fms.bean;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+import org.apache.commons.lang3.builder.ToStringBuilder;
+import org.hibernate.annotations.Cache;
+import org.hibernate.annotations.CacheConcurrencyStrategy;
+
+/**
+ * 用户组
+ * 
+ * @author crazylion
+ */
+@Entity
+@Table(name = "fms_group")
+@Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
+public class Group extends BaseEntity {
+
+	private String code;
+	private String name;
+	private String comments;
+
+
+	public Group() {
+	}
+
+	public Group(String id, String name) {
+		this.id = id;
+		this.name = name;
+	}
+
+	@Column(length=50,nullable=false)
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	@Column(length=500,nullable=true)
+	public String getComments() {
+		return comments;
+	}
+
+	public void setComments(String comments) {
+		this.comments = comments;
+	}
+
+	
+	@Column(length=30,nullable=false)
+	public String getCode() {
+		return code;
+	}
+
+	public void setCode(String code) {
+		this.code = code;
+	}
+
+	@Override
+	public String toString() {
+		return ToStringBuilder.reflectionToString(this);
+	}
+}

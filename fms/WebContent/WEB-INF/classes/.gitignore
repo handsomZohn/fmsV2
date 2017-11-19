@@ -1,0 +1,14 @@
+/.DS_Store
+/META-INF/
+/application.properties
+/applicationContext-log.xml
+/applicationContext-shiro.xml
+/applicationContext.xml
+/com/
+/ehcache/
+/email/
+/log4j.properties
+/message.properties
+/message_en_US.properties
+/message_zh_CN.properties
+/report/

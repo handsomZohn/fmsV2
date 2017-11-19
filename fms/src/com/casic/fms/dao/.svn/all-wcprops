@@ -1,0 +1,167 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/repos/casic/!svn/ver/896/fmsV2/src/com/casic/fms/dao
+END
+SecurityLevelDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/casic/!svn/ver/59/fmsV2/src/com/casic/fms/dao/SecurityLevelDao.java
+END
+RolePermissionDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/casic/!svn/ver/59/fmsV2/src/com/casic/fms/dao/RolePermissionDao.java
+END
+LogPeriodDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/casic/!svn/ver/518/fmsV2/src/com/casic/fms/dao/LogPeriodDao.java
+END
+VersionInfoDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/casic/!svn/ver/59/fmsV2/src/com/casic/fms/dao/VersionInfoDao.java
+END
+MessageDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/casic/!svn/ver/59/fmsV2/src/com/casic/fms/dao/MessageDao.java
+END
+FileLogDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/casic/!svn/ver/800/fmsV2/src/com/casic/fms/dao/FileLogDao.java
+END
+USBKeyInfoDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/casic/!svn/ver/482/fmsV2/src/com/casic/fms/dao/USBKeyInfoDao.java
+END
+PasswordLogDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/casic/!svn/ver/810/fmsV2/src/com/casic/fms/dao/PasswordLogDao.java
+END
+UserDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/casic/!svn/ver/59/fmsV2/src/com/casic/fms/dao/UserDao.java
+END
+FileLogHistoryDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/casic/!svn/ver/635/fmsV2/src/com/casic/fms/dao/FileLogHistoryDao.java
+END
+OrgUSBKeyInfoDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/casic/!svn/ver/622/fmsV2/src/com/casic/fms/dao/OrgUSBKeyInfoDao.java
+END
+ProcessListDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/casic/!svn/ver/802/fmsV2/src/com/casic/fms/dao/ProcessListDao.java
+END
+PermissionDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/casic/!svn/ver/492/fmsV2/src/com/casic/fms/dao/PermissionDao.java
+END
+SystemConfigDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/casic/!svn/ver/828/fmsV2/src/com/casic/fms/dao/SystemConfigDao.java
+END
+OrgInfoDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/casic/!svn/ver/426/fmsV2/src/com/casic/fms/dao/OrgInfoDao.java
+END
+USBKeyMonthlyDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/casic/!svn/ver/802/fmsV2/src/com/casic/fms/dao/USBKeyMonthlyDao.java
+END
+UserGroupDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/casic/!svn/ver/59/fmsV2/src/com/casic/fms/dao/UserGroupDao.java
+END
+FileTypeDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/casic/!svn/ver/59/fmsV2/src/com/casic/fms/dao/FileTypeDao.java
+END
+RoleDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/casic/!svn/ver/59/fmsV2/src/com/casic/fms/dao/RoleDao.java
+END
+SecurityLimitDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/casic/!svn/ver/339/fmsV2/src/com/casic/fms/dao/SecurityLimitDao.java
+END
+OrgInfoMonthlyDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/casic/!svn/ver/632/fmsV2/src/com/casic/fms/dao/OrgInfoMonthlyDao.java
+END
+FileSecurityDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/casic/!svn/ver/310/fmsV2/src/com/casic/fms/dao/FileSecurityDao.java
+END
+FaceDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/casic/!svn/ver/59/fmsV2/src/com/casic/fms/dao/FaceDao.java
+END
+PCClientDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/casic/!svn/ver/59/fmsV2/src/com/casic/fms/dao/PCClientDao.java
+END
+GroupDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/casic/!svn/ver/59/fmsV2/src/com/casic/fms/dao/GroupDao.java
+END
+FileClassifyDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/casic/!svn/ver/896/fmsV2/src/com/casic/fms/dao/FileClassifyDao.java
+END
+UserRoleDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/casic/!svn/ver/59/fmsV2/src/com/casic/fms/dao/UserRoleDao.java
+END

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/casic/!svn/ver/782/fmsV2/src/com/casic/fms/service/trigger
+END
+TransferDailyJob.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/casic/!svn/ver/608/fmsV2/src/com/casic/fms/service/trigger/TransferDailyJob.java
+END
+LogSingletonService.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/casic/!svn/ver/782/fmsV2/src/com/casic/fms/service/trigger/LogSingletonService.java
+END
+USBKeyTokenService.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/casic/!svn/ver/782/fmsV2/src/com/casic/fms/service/trigger/USBKeyTokenService.java
+END
+ReportMonthlyJob.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/casic/!svn/ver/608/fmsV2/src/com/casic/fms/service/trigger/ReportMonthlyJob.java
+END
+TokenCleanupJob.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/casic/!svn/ver/610/fmsV2/src/com/casic/fms/service/trigger/TokenCleanupJob.java
+END

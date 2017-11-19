@@ -1,0 +1,310 @@
+package com.casic.fms.web.json;
+
+import java.io.Serializable;
+import java.util.List;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import com.casic.fms.bean.FileLog;
+import com.casic.fms.bean.FileSecurity;
+import com.casic.fms.bean.FileType;
+import com.casic.fms.bean.ProcessList;
+import com.casic.fms.bean.ReInfo;
+import com.casic.fms.bean.SecurityLevel;
+import com.casic.fms.bean.SecurityLimit;
+import com.casic.fms.bean.USBKeyInfo;
+import com.casic.fms.bean.VersionInfo;
+import com.casic.fms.service.AuthenticationService;
+import com.casic.fms.service.AuthorizeService;
+import com.casic.fms.service.BaseDataService;
+import com.casic.fms.service.FileLogService;
+import com.casic.fms.service.FileSecurityLevelService;
+import com.casic.fms.service.VersionInfoService;
+
+/**
+ * Urls:
+ * 
+ * @author crazylion
+ */
+@Controller
+@RequestMapping(value = "/json")
+public class JsonFileLogController extends BaseJsonController{
+
+
+
+
+
+	private static Logger logger = LoggerFactory.getLogger(JsonFileLogController.class);
+
+
+	private VersionInfoService versionInfoService;
+	private FileLogService	fileLogService;
+	private BaseDataService	baseDataService;
+	private FileSecurityLevelService	fileSecurityLevelService;
+	private AuthenticationService	authenticationService;
+	private AuthorizeService		authorizeService;
+	
+
+
+	@Autowired
+	public void setAuthorizeService(AuthorizeService authorizeService) {
+		this.authorizeService = authorizeService;
+	}
+	@Autowired
+	public void setVersionInfoService(VersionInfoService versionInfoService) {
+		this.versionInfoService = versionInfoService;
+	}
+	
+	@Autowired
+	public AuthenticationService setAuthenticationService(AuthenticationService as) {
+		return this.authenticationService = as;
+	}
+
+	@Autowired
+	public void setFileSecurityLevelService(
+			FileSecurityLevelService fileSecurityLevelService) {
+		this.fileSecurityLevelService = fileSecurityLevelService;
+	}
+
+
+	
+	
+	@Autowired
+	public void setBaseDataService(BaseDataService baseDataService) {
+		this.baseDataService = baseDataService;
+	}
+	@Autowired
+	public void setFileLogService(FileLogService fileLogService) {
+		this.fileLogService = fileLogService;
+	}
+
+	
+	class ServerTest implements Serializable{
+		public String getStatus() {
+			return status;
+		}
+		public void setStatus(String status) {
+			this.status = status;
+		}
+		public String getMessage() {
+			return message;
+		}
+		public void setMessage(String message) {
+			this.message = message;
+		}
+		/**
+		 * 
+		 */
+		private static final long serialVersionUID = 1L;
+		public String status= "OK";
+		public String message="服务器状态良好！";
+		
+	}
+	/**
+	 * 文档类型列表
+	 * @param url
+	 * @param body
+	 * @return
+	 */
+	@RequestMapping(value = {"test","test.json","test.xml"},method=RequestMethod.GET)
+	@ResponseBody
+	public ServerTest getServerStatus() {
+		return new ServerTest();
+	}
+
+	@RequestMapping(value = {"testa","testa.json","testa.xml"},method=RequestMethod.GET)
+	@ResponseBody
+	public ReInfo getServerReinfo() {
+		ReInfo ri = ReInfo.getSucceed();
+		ri.code ="001";
+		ri.data = "1233214";
+		ri.message = "good";
+		return ri;
+	}
+	/**
+	 * 定密信息 
+	 * @param url
+	 * @param body
+	 * @return
+	 */
+	@RequestMapping(value = "help",method=RequestMethod.GET)
+	@ResponseBody
+	public void showHelp(HttpServletRequest request,HttpServletResponse response) {
+		try{
+			
+			response.sendRedirect(request.getContextPath()+"/static/help/help.doc");
+		}catch(Exception ex){
+			ex.printStackTrace();
+		}
+	}
+
+	
+	/**
+	 * 定密信息 
+	 * @param url
+	 * @param body
+	 * @return
+	 */
+	@RequestMapping(value = "version/last",method=RequestMethod.GET)
+	@ResponseBody
+	public VersionInfo  getLastVersion() {
+		return this.versionInfoService.getLastVersion();
+	}
+	/**
+	 * 文档类型列表
+	 * @param url
+	 * @param body
+	 * @return
+	 */
+	@RequestMapping(value = "sls",method=RequestMethod.GET)
+	@ResponseBody
+	public List<SecurityLevel> getSecurityLevels() {
+		return this.fileSecurityLevelService.getAllLevels();
+	}
+
+	/**
+	 * 文档类型列表
+	 * @param url
+	 * @param body
+	 * @return
+	 */
+	@RequestMapping(value = "securitylimits",method=RequestMethod.GET)
+	@ResponseBody
+	public List<SecurityLimit> getSecurityLimits() {
+		return this.baseDataService.getAllSecurityLimit();
+	}
+	/**
+	 * 文档类型列表
+	 * @param url
+	 * @param body
+	 * @return
+	 */
+	@RequestMapping(value = "processlist",method=RequestMethod.GET)
+	@ResponseBody
+	public List<ProcessList> getProcessList() {
+		return this.baseDataService.getAllProcessList();
+	}
+	/**
+	 * 文档类型列表
+	 * @param url
+	 * @param body
+	 * @return
+	 */
+	@RequestMapping(value = "usbkeyinfo/{usbkey}",method=RequestMethod.GET)
+	@ResponseBody
+	public USBKeyInfo getUSBKeyInfo(@PathVariable("usbkey")String usbkey) {
+		return this.authorizeService.getUSBKey(usbkey);
+	}
+
+	/**
+	 * 文档类型列表
+	 * @param url
+	 * @param body
+	 * @return
+	 */
+	@RequestMapping(value = "filetypes",method=RequestMethod.GET)
+	@ResponseBody
+	public List<FileType> getFileTypes() {
+		return this.baseDataService.getFileTypes();
+	}
+
+	
+	/**
+	 * 增加文档类型的安全进程
+	 * @param url
+	 * @param body
+	 * @return
+	 */
+	@RequestMapping(value = "filetype",method=RequestMethod.POST)
+	@ResponseBody
+	public Object addFileTypes(@RequestBody String body) {
+		FileType ft= (FileType)super.readJsonValue(body, FileLog.class);
+		ft= this.baseDataService.addFileType(ft);
+		if(ft == null){
+			return ReInfo.getFailed();
+		}
+		return ft;
+	}
+
+	/**
+	 * 文档日志接收接口
+	 * @param url
+	 * @param body
+	 * @return
+	 */
+	@RequestMapping(value = "filelog",method=RequestMethod.POST)
+	@ResponseBody
+	public FileLog push( @RequestBody String body) {
+		FileLog msglog = (FileLog)super.readJsonValue(body, FileLog.class);
+		msglog = this.fileLogService.saveLog(msglog);
+		return msglog;
+	}
+	
+	/**
+	 * 文档日志接收接口
+	 * @param url
+	 * @param body
+	 * @return
+	 */
+	@RequestMapping(value = "admin/password",method=RequestMethod.GET)
+	@ResponseBody
+	public ReInfo getAdminPassword() {
+		ReInfo ri = ReInfo.getSucceed();
+		ri.data = this.authenticationService.getAdminPassword();
+		return ri;
+	}
+	
+	/**
+	 * 监测用户的登录信息
+	 * @param url
+	 * @param body
+	 * @return
+	 */
+	@RequestMapping(value = "/login/{username}/{password}",method=RequestMethod.GET)
+	@ResponseBody
+	public ReInfo loginAdmin(@PathVariable("username")String username, @PathVariable("password") String password) {
+		return this.authenticationService.loginAdmin(username,password);
+	}
+	
+	
+
+	/**
+	 * 文档定密接收接口
+	 * @param body
+	 * @return
+	 */
+	@RequestMapping(value = "filesecruity",method=RequestMethod.POST)
+	@ResponseBody
+	public Object defineSecurity( @RequestBody String body) {
+		try{
+			FileSecurity fsc = (FileSecurity)super.readJsonValue(body, FileSecurity.class);
+			return this.fileLogService.applySecruity(fsc);
+		}catch(Exception ex){
+			return ReInfo.getFailed();
+		}
+	}
+
+
+
+
+	
+	public static void main(String[] strs){
+		String filename = "c:\\test\\test.pdf";
+		System.out.println(filename.substring(filename.lastIndexOf(".")));
+	}
+
+
+
+
+}

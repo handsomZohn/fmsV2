@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repos/casic/!svn/ver/900/fmsV2/src/com/casic/fms/service/impl
+END
+VersionInfoServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/casic/!svn/ver/59/fmsV2/src/com/casic/fms/service/impl/VersionInfoServiceImpl.java
+END
+MessageServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/casic/!svn/ver/59/fmsV2/src/com/casic/fms/service/impl/MessageServiceImpl.java
+END
+AuthorizeServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/casic/!svn/ver/740/fmsV2/src/com/casic/fms/service/impl/AuthorizeServiceImpl.java
+END
+PDFServiceImp.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/casic/!svn/ver/280/fmsV2/src/com/casic/fms/service/impl/PDFServiceImp.java
+END
+BaseServiceImp.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/casic/!svn/ver/59/fmsV2/src/com/casic/fms/service/impl/BaseServiceImp.java
+END
+InitServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/casic/!svn/ver/59/fmsV2/src/com/casic/fms/service/impl/InitServiceImpl.java
+END
+SystemConfigServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/casic/!svn/ver/831/fmsV2/src/com/casic/fms/service/impl/SystemConfigServiceImpl.java
+END
+LogStatisticServiceImp.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/casic/!svn/ver/802/fmsV2/src/com/casic/fms/service/impl/LogStatisticServiceImp.java
+END
+ShiroDbRealm.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/casic/!svn/ver/59/fmsV2/src/com/casic/fms/service/impl/ShiroDbRealm.java
+END
+PasswordLogServiceImp.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/casic/!svn/ver/830/fmsV2/src/com/casic/fms/service/impl/PasswordLogServiceImp.java
+END
+FileLogServiceImp.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/casic/!svn/ver/782/fmsV2/src/com/casic/fms/service/impl/FileLogServiceImp.java
+END
+FileSecurityLevelServiceImp.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/casic/!svn/ver/59/fmsV2/src/com/casic/fms/service/impl/FileSecurityLevelServiceImp.java
+END
+AuthenticationServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/casic/!svn/ver/821/fmsV2/src/com/casic/fms/service/impl/AuthenticationServiceImpl.java
+END
+ChangeLocalServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/casic/!svn/ver/59/fmsV2/src/com/casic/fms/service/impl/ChangeLocalServiceImpl.java
+END
+FaceServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/casic/!svn/ver/59/fmsV2/src/com/casic/fms/service/impl/FaceServiceImpl.java
+END
+FileClassifyServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/casic/!svn/ver/900/fmsV2/src/com/casic/fms/service/impl/FileClassifyServiceImpl.java
+END
+BaseDataServiceImp.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/casic/!svn/ver/899/fmsV2/src/com/casic/fms/service/impl/BaseDataServiceImp.java
+END

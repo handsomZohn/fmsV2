@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/repos/casic/!svn/ver/903/fmsV2/WebContent/WEB-INF/layouts
+END
+left.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/casic/!svn/ver/903/fmsV2/WebContent/WEB-INF/layouts/left.jsp
+END
+single.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/casic/!svn/ver/621/fmsV2/WebContent/WEB-INF/layouts/single.jsp
+END
+error.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/casic/!svn/ver/675/fmsV2/WebContent/WEB-INF/layouts/error.jsp
+END
+login.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/casic/!svn/ver/59/fmsV2/WebContent/WEB-INF/layouts/login.jsp
+END
+footer.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/casic/!svn/ver/59/fmsV2/WebContent/WEB-INF/layouts/footer.jsp
+END
+header.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/casic/!svn/ver/59/fmsV2/WebContent/WEB-INF/layouts/header.jsp
+END
+default.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/casic/!svn/ver/519/fmsV2/WebContent/WEB-INF/layouts/default.jsp
+END
+widget.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/casic/!svn/ver/59/fmsV2/WebContent/WEB-INF/layouts/widget.jsp
+END

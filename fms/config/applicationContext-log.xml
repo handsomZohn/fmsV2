@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd"
+	default-lazy-init="true">
+
+	<description>Sync Configuration</description>
+
+
+	<!-- 配置每天日志备份定时任务 -->
+	<bean name="jobLogDailyTransfer" class="org.springframework.scheduling.quartz.JobDetailFactoryBean">  
+		<property name="durability" value="true" />  
+		<property name="jobClass" value="com.casic.fms.service.trigger.TransferDailyJob" />  
+		<property name="jobDataAsMap">  
+			<map>  
+				<entry key="timeout" value="0" />  
+			</map>  
+		</property>  
+	</bean> 	
+	<bean id="dailyTransferCronTrigger" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+		<property name="jobDetail" ref="jobLogDailyTransfer" />  
+		<!--  每天24:00运行一次 -->  
+		<property name="cronExpression" value="${fms.transfer.quartz.cron}" />  
+	</bean>  	
+	
+	
+	<bean name="jobMonthlyWorker" class="org.springframework.scheduling.quartz.JobDetailFactoryBean">  
+		<property name="durability" value="true" />  
+		<property name="jobClass" value="com.casic.fms.service.trigger.ReportMonthlyJob" />  
+		<property name="jobDataAsMap">  
+		<map>  
+			<entry key="timeout" value="0" />  
+		</map>  
+		</property>  
+	</bean> 	
+	<!-- 每个月1日晚上9点开始计算 -->
+	<bean id="monthlyWorkCronTrigger" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+		<property name="jobDetail" ref="jobMonthlyWorker" />  
+		<property name="cronExpression" value="${fms.monthly.quartz.cron}" />  
+	</bean>  	
+	
+	
+	<bean name="jobTokenWorker" class="org.springframework.scheduling.quartz.JobDetailFactoryBean">  
+		<property name="durability" value="true" />  
+		<property name="jobClass" value="com.casic.fms.service.trigger.TokenCleanupJob" />  
+		<property name="jobDataAsMap">  
+		<map>  
+			<entry key="timeout" value="0" />  
+		</map>  
+		</property>  
+	</bean> 	
+	
+	<!-- 每分钟计算一次-->
+	<bean id="minutelyWorkCronTrigger" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+		<property name="jobDetail" ref="jobTokenWorker" />  
+		<property name="cronExpression" value="${fms.token.quartz.cron}" />  
+	</bean>  		
+	
+	<bean id="schedulerFactoryBean"  class="org.springframework.scheduling.quartz.SchedulerFactoryBean">  
+		<property name="triggers">  
+			<list>  
+				<ref bean="dailyTransferCronTrigger" />  
+				 <ref bean="monthlyWorkCronTrigger" /> 
+				 <ref bean="minutelyWorkCronTrigger" /> 
+			</list>  
+		</property>  
+	</bean> 
+
+</beans>

@@ -1,0 +1,8 @@
+eclipse.preferences.version=1
+encoding//WebContent/WEB-INF/views/login.inc=UTF-8
+encoding//config/application.properties=UTF-8
+encoding//config/message.properties=UTF-8
+encoding//config/message_en_US.properties=UTF-8
+encoding//config/message_zh_CN.properties=UTF-8
+encoding/<project>=UTF-8
+separateDerivedEncodings=true

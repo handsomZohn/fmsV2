@@ -1,0 +1,15 @@
+info.view.menu.login=login
+info.view.menu.logout=logout
+info.view.menu.register=register
+info.view.menu.accoutlist=accout
+info.view.menu.grouplist=group
+info.view.menu.modPwd=modify password
+info.view.login.title=login
+info.view.login.name=name
+info.view.login.password=password
+info.view.login.verifyCode=verifyCode
+info.view.login.login=login
+info.view.login.remember=remember me
+info.view.login.forgetPwd=forget password ?
+info.view.login.suggests=loginName, or email
+info.view.anywhere.reset=reset

@@ -1,0 +1,12 @@
+.Validform_error{
+    color:red;
+}
+.Validform_right{
+    color:#5BB75B;
+}
+.Validform_wrong{
+    color:red;
+}
+.Validform_loading{
+    color:#FFCC99;
+}

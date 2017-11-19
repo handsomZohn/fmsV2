@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/repos/casic/!svn/ver/905/fmsV2/WebContent/WEB-INF
+END
+decorators.xml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/casic/!svn/ver/675/fmsV2/WebContent/WEB-INF/decorators.xml
+END
+spring-mvc.xml
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/casic/!svn/ver/59/fmsV2/WebContent/WEB-INF/spring-mvc.xml
+END
+web.xml
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/repos/casic/!svn/ver/299/fmsV2/WebContent/WEB-INF/web.xml
+END

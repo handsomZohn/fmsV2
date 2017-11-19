@@ -1,0 +1,29 @@
+<p>${queryModel.year}年${queryModel.month}月
+<#if totalSecurityCount??>
+<p>${orginfo.name}共计完成电子文档定密${totalSecurityCount}个，按照密级划分
+<#list securityList as securityModel>
+密级为<font color="red">${securityModel[0]}</font>共计${securityModel[1]}个；
+</#list>
+</p>
+<p>
+<#list securityPercentList as securityModel> 
+密级<font color="red">${securityModel[0]}</font>占${securityModel[1]}；
+</#list>
+</p>
+<p>按照文件类型划分，
+<#list filetypeList as fileTypeModel>
+${fileTypeModel[0]}共计${fileTypeModel[1]}个；
+</#list>
+</p>
+<p>
+<#list filetypePercentList as fileTypeModel> 
+${fileTypeModel[0]}占${fileTypeModel[1]}；
+</#list>
+</p>
+
+</#if>
+
+<#if !totalSecurityCount??>
+<p>${orginfo.name}共计完成电子文档定密0个。
+</#if>
+

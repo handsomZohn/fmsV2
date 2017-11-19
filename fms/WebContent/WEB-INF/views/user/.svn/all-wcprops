@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repos/casic/!svn/ver/886/fmsV2/WebContent/WEB-INF/views/user
+END
+faceUploadFail.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/casic/!svn/ver/59/fmsV2/WebContent/WEB-INF/views/user/faceUploadFail.jsp
+END
+changepwd.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/casic/!svn/ver/884/fmsV2/WebContent/WEB-INF/views/user/changepwd.jsp
+END
+groupList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/casic/!svn/ver/59/fmsV2/WebContent/WEB-INF/views/user/groupList.jsp
+END
+faceUpload.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/casic/!svn/ver/59/fmsV2/WebContent/WEB-INF/views/user/faceUpload.jsp
+END
+list.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/casic/!svn/ver/886/fmsV2/WebContent/WEB-INF/views/user/list.jsp
+END
+target.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/casic/!svn/ver/59/fmsV2/WebContent/WEB-INF/views/user/target.jsp
+END
+modForgetPwdForm.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/casic/!svn/ver/59/fmsV2/WebContent/WEB-INF/views/user/modForgetPwdForm.jsp
+END
+groupForm.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/casic/!svn/ver/59/fmsV2/WebContent/WEB-INF/views/user/groupForm.jsp
+END
+form.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/casic/!svn/ver/885/fmsV2/WebContent/WEB-INF/views/user/form.jsp
+END
+mailSendSuccess.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/casic/!svn/ver/59/fmsV2/WebContent/WEB-INF/views/user/mailSendSuccess.jsp
+END
+faceUploadSuccess.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/casic/!svn/ver/59/fmsV2/WebContent/WEB-INF/views/user/faceUploadSuccess.jsp
+END

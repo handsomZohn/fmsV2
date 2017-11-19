@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/repos/casic/!svn/ver/900/fmsV2/src/com/casic/fms/service
+END
+VersionInfoService.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/casic/!svn/ver/59/fmsV2/src/com/casic/fms/service/VersionInfoService.java
+END
+MessageService.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/casic/!svn/ver/59/fmsV2/src/com/casic/fms/service/MessageService.java
+END
+FileLogService.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/casic/!svn/ver/782/fmsV2/src/com/casic/fms/service/FileLogService.java
+END
+FileSecurityLevelService.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/casic/!svn/ver/59/fmsV2/src/com/casic/fms/service/FileSecurityLevelService.java
+END
+AuthorizeService.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/casic/!svn/ver/518/fmsV2/src/com/casic/fms/service/AuthorizeService.java
+END
+PasswordLogService.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/casic/!svn/ver/811/fmsV2/src/com/casic/fms/service/PasswordLogService.java
+END
+LoginServiceErrorCode.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/casic/!svn/ver/59/fmsV2/src/com/casic/fms/service/LoginServiceErrorCode.java
+END
+LogStatisticService.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/casic/!svn/ver/632/fmsV2/src/com/casic/fms/service/LogStatisticService.java
+END
+InitService.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/casic/!svn/ver/59/fmsV2/src/com/casic/fms/service/InitService.java
+END
+SystemConfigService.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/casic/!svn/ver/829/fmsV2/src/com/casic/fms/service/SystemConfigService.java
+END
+AuthenticationService.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/casic/!svn/ver/280/fmsV2/src/com/casic/fms/service/AuthenticationService.java
+END
+BaseDataService.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/casic/!svn/ver/897/fmsV2/src/com/casic/fms/service/BaseDataService.java
+END
+ChangeLocalService.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/casic/!svn/ver/59/fmsV2/src/com/casic/fms/service/ChangeLocalService.java
+END
+LogOutUserTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/casic/!svn/ver/59/fmsV2/src/com/casic/fms/service/LogOutUserTask.java
+END
+ServiceException.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/casic/!svn/ver/59/fmsV2/src/com/casic/fms/service/ServiceException.java
+END
+LoginUserManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/casic/!svn/ver/59/fmsV2/src/com/casic/fms/service/LoginUserManager.java
+END
+FaceService.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/casic/!svn/ver/59/fmsV2/src/com/casic/fms/service/FaceService.java
+END
+FileClassifyService.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/casic/!svn/ver/898/fmsV2/src/com/casic/fms/service/FileClassifyService.java
+END
+RegisterUserTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/casic/!svn/ver/59/fmsV2/src/com/casic/fms/service/RegisterUserTask.java
+END
+UserLoginContext.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/casic/!svn/ver/59/fmsV2/src/com/casic/fms/service/UserLoginContext.java
+END

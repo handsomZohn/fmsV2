@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/repos/casic/!svn/ver/902/fmsV2/config
+END
+application.properties
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repos/casic/!svn/ver/775/fmsV2/config/application.properties
+END
+message_en_US.properties
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repos/casic/!svn/ver/59/fmsV2/config/message_en_US.properties
+END
+log4j.properties
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/repos/casic/!svn/ver/59/fmsV2/config/log4j.properties
+END
+applicationContext.xml
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repos/casic/!svn/ver/492/fmsV2/config/applicationContext.xml
+END
+message.properties
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/repos/casic/!svn/ver/902/fmsV2/config/message.properties
+END
+applicationContext-shiro.xml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/casic/!svn/ver/675/fmsV2/config/applicationContext-shiro.xml
+END
+message_zh_CN.properties
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repos/casic/!svn/ver/59/fmsV2/config/message_zh_CN.properties
+END
+applicationContext-log.xml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/casic/!svn/ver/610/fmsV2/config/applicationContext-log.xml
+END

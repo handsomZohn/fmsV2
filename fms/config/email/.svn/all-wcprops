@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/repos/casic/!svn/ver/59/fmsV2/config/email
+END
+mailTemplate.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repos/casic/!svn/ver/59/fmsV2/config/email/mailTemplate.ftl
+END
+modPwdTemplate.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repos/casic/!svn/ver/59/fmsV2/config/email/modPwdTemplate.ftl
+END
+applicationContext-email.xml
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/casic/!svn/ver/59/fmsV2/config/email/applicationContext-email.xml
+END

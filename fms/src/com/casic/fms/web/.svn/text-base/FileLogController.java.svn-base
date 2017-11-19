@@ -1,0 +1,137 @@
+package com.casic.fms.web;
+
+import java.util.List;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+import org.apache.shiro.authz.annotation.RequiresPermissions;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import com.casic.fms.bean.FileLog;
+import com.casic.fms.bean.FileLogHistory;
+import com.casic.fms.bean.FileSecurity;
+import com.casic.fms.bean.PCClient;
+import com.casic.fms.bean.SecurityLevel;
+import com.casic.fms.bean.query.FileLogQueryBean;
+import com.casic.fms.service.AuthorizeService;
+import com.casic.fms.service.BaseDataService;
+import com.casic.fms.service.FileLogService;
+import com.casic.fms.service.LogStatisticService;
+
+/**
+ * Urls:
+ * 
+ * @author crazylion
+ *
+ */
+@Controller
+@RequestMapping(value = "/web")
+public class FileLogController  extends BaseWebController{
+
+	private FileLogService	fileLogService;
+	private LogStatisticService	logStatisticService;
+	private BaseDataService		baseDataService;
+	private AuthorizeService		authorizeService;
+
+	@Autowired
+	public void setAuthorizeService(AuthorizeService authorizeService) {
+		this.authorizeService = authorizeService;
+	}
+	
+	
+	@Autowired
+	public void setBaseDataService(BaseDataService baseDataService) {
+		this.baseDataService = baseDataService;
+	}
+	@Autowired
+	public void setLogStatisticService(LogStatisticService logStatisticService) {
+		this.logStatisticService = logStatisticService;
+	}
+	
+	@Autowired
+	public void setFileLogService(FileLogService fileLogService) {
+		this.fileLogService = fileLogService;
+	}
+	@RequiresPermissions("filelogs:list")
+	@RequestMapping(value = {"filelogs/today/{pageIndex}"},method=RequestMethod.GET)
+	public String listToday(@PathVariable("pageIndex") Integer pageIndex,
+			@RequestParam(value="pageSize", required=false) Integer pageSize,Model model) {
+		if(pageSize == null)	pageSize= 10;
+		Page<FileLog>  pageModels = this.fileLogService.getLogs(pageIndex, pageSize);
+		model.addAttribute("models", pageModels.getContent());
+		addPageinfo(model, pageModels);
+		return "filelog/today";
+	}
+	@RequiresPermissions("filelogs:list")
+	@RequestMapping(value = {"filelogs/{pageIndex}"})
+	public String list(FileLogQueryBean queryBean,@PathVariable("pageIndex") Integer pageIndex,
+			@RequestParam(value="pageSize", required=false) Integer pageSize,
+			@RequestParam(value="recall", required=false) String recall,
+			Model model,HttpSession session,HttpServletRequest request) {
+		if(pageSize == null)	pageSize= 10;
+		if("true".equals(recall)){
+			session.removeAttribute("logquerybean");
+		}
+		if("POST".equalsIgnoreCase(request.getMethod()) ){
+			session.setAttribute("logquerybean", queryBean);
+		}else{
+			queryBean = (FileLogQueryBean)session.getAttribute("logquerybean");
+		}
+		Page<FileLogHistory>  pageModels = this.logStatisticService.getLogs(pageIndex, pageSize, queryBean);
+		model.addAttribute("models", pageModels.getContent());
+		if(queryBean == null){
+			queryBean = new FileLogQueryBean();
+		}
+		model.addAttribute("querymodel", queryBean);
+		List<SecurityLevel>  securityLevels = baseDataService.getSecurityLevels();
+		securityLevels.add(0, new SecurityLevel("","全部"));
+		model.addAttribute("securityLevels", securityLevels);
+		model.addAttribute("orginfoes", this.authorizeService.getAllOrginfo(true));
+		addPageinfo(model, pageModels);
+		return "filelog/index";
+	}
+	@RequiresPermissions("filesecurity:list")
+	@RequestMapping(value = {"filesecurity/{pageIndex}"},method=RequestMethod.GET)
+	public String listFileSecruity(@PathVariable("pageIndex") Integer pageIndex,
+			@RequestParam(value="pageSize", required=false) Integer pageSize,Model model) {
+		if(pageSize == null)	pageSize= 10;
+		Page<FileSecurity>  pageModels = this.fileLogService.getFileSecuritys(pageIndex, pageSize);
+		model.addAttribute("models", pageModels.getContent());
+		addPageinfo(model, pageModels);
+		return "filesecurity/index";
+	}
+
+	@RequiresPermissions("client:list")
+	@RequestMapping(value = {"clients/{pageIndex}"},method=RequestMethod.GET)
+	public String listClients(@PathVariable(value="pageIndex") Integer pageIndex,
+			@RequestParam(value="pageSize", required=false) Integer pageSize,Model model) {
+		if(pageIndex == null)	pageIndex = 0;
+		if(pageSize == null)	pageSize= 10;
+		Page<PCClient>	pageModels = this.logStatisticService.getClientList(pageIndex, pageSize);
+		model.addAttribute("models", pageModels.getContent());
+		addPageinfo(model, pageModels);
+		return "client/index";
+	}
+	@RequiresPermissions("client:edit")
+	@RequestMapping(value = {"client/{mac}"},method=RequestMethod.GET)
+	public String editClients(@PathVariable(value="mac") String mac,Model model) {
+		model.addAttribute("model", this.logStatisticService.getPCClient(mac));
+		return "client/form";
+	}
+	@RequiresPermissions("client:save")	
+	@RequestMapping(value = {"client/save"},method=RequestMethod.POST)
+	public String saveClients(PCClient model) {
+		this.logStatisticService.updatePCClient(model);
+		return "redirect:/web/clients/0";
+	}
+	
+}

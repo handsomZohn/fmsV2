@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/repos/casic/!svn/ver/905/fmsV2/WebContent/WEB-INF/views
+END
+error.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/casic/!svn/ver/675/fmsV2/WebContent/WEB-INF/views/error.jsp
+END
+login.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/casic/!svn/ver/59/fmsV2/WebContent/WEB-INF/views/login.jsp
+END
+agreement.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/casic/!svn/ver/59/fmsV2/WebContent/WEB-INF/views/agreement.jsp
+END
+logined.inc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/casic/!svn/ver/59/fmsV2/WebContent/WEB-INF/views/logined.inc
+END
+forgetPwd.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/casic/!svn/ver/59/fmsV2/WebContent/WEB-INF/views/forgetPwd.jsp
+END
+init.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/casic/!svn/ver/891/fmsV2/WebContent/WEB-INF/views/init.jsp
+END
+login.inc
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/casic/!svn/ver/333/fmsV2/WebContent/WEB-INF/views/login.inc
+END
+index.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/casic/!svn/ver/890/fmsV2/WebContent/WEB-INF/views/index.jsp
+END
+register.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/casic/!svn/ver/892/fmsV2/WebContent/WEB-INF/views/register.jsp
+END
